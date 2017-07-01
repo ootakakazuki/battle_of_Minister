@@ -39,9 +39,6 @@ class Original(object):
                     print(i + " ", end='')
         print()
 
-
-
-
     def ACT(self, target):
         """攻撃コマンド。
         """
@@ -220,9 +217,6 @@ class mori(Original):
                 print("2回目の攻撃！")
                 self.ACT(you)
         print("反動で" + str(point) + "のダメージ!")  # 反動でダメージを受ける
-
-
-
 
 
 class Noda(Original):
