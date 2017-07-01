@@ -228,7 +228,7 @@ class Noda(Original):
                          MP=80,
                          DE=100,
                          serihu="「」",
-                         name="野獣先輩",
+                         name="野田総理",
                          ziseinoku="「」")
 
 
