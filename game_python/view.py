@@ -47,7 +47,9 @@ def print_command_select(y, t):
     return inp
 
 
-def ozisan_kakusei(you, tar):
+def mori_kakusei(you, tar):
+    """森首相限定の特殊能力。体力が250以下になったときに攻撃力が1.5倍になる
+    """
     if you.name == "森元首相" and you.HP <= 250 and you.kakusei_flg == 0:
         you.AT *= 1.5
         you.kakusei_flg = 1
@@ -68,6 +70,6 @@ def print_win(tar):
 
 
 def print_lose(you):
-    print(you.name + "は倒れた！")    
+    print(you.name + "は倒れた！")
     print(you.ziseinoku)
     print("You LOSE...")
