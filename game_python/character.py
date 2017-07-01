@@ -258,7 +258,7 @@ class Noda(Original):
     def poison_attack(self, target):
         """毒状態にさせる攻撃
         """
-        print("ブッチッパ！")
+        print("野田総理の毒攻撃！")
         if self.MP >= 10:
             self.MP -= 10
             s = randint(10)
