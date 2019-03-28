@@ -4,8 +4,13 @@ import view as v
 import status_action as st
 
 def main():
-    you = v.print_self_select()  # 自分が操作するキャラクターを選ぶ
-    tar = v.print_target_select()  # 対戦相手を選ぶ
+    #you = v.print_select()  # 自分が操作するキャラクターを選ぶ
+    v.print_select()  # 自分が操作するキャラクターを選ぶ
+    you = v.aa()
+    print(you.name)
+    #tar = v.print_target_select()  # 対戦相手を選ぶ
+    v.print_target_select()
+    tar = v.aa()
     print(tar.name + "が現れた！")
     ref_count = 0  # リフレクターのためにターンを数えるカウンター
     while 1:  # 以下ループ

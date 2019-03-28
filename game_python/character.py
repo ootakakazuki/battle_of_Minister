@@ -227,9 +227,9 @@ class Noda(Original):
                          AT=100,
                          MP=80,
                          DE=100,
-                         serihu="「」",
+                         serihu="「くらいなさい」",
                          name="野田総理",
-                         ziseinoku="「」")
+                         ziseinoku="「どじょうの栄華も、ここまでか」")
 
 
     def special_attack(self, target):

@@ -1,33 +1,38 @@
 import character as c
 
-def print_self_select():
+def print_select():
     print("誰を選びますか")
-    print("福田首相 : 1")
-    print("野田総理 : 2")
-    print("森元首相 : 3")
-    inp_self = int(input())
-    if inp_self == 1:
-        y = c.hukuda()
-    elif inp_self == 2:
-        y = c.Noda()
-    elif inp_self == 3:
-        y = c.mori()
-    return y
+
+#    print("福田首相 : 1")
+#    print("野田総理 : 2")
+#    print("森元首相 : 3")
+#    inp = int(input())
+#    if inp == 1:
+#        y = c.hukuda()
+#    elif inp == 2:
+#        y = c.Noda()
+#    elif inp == 3:
+#        y = c.mori()
+#    return y
 
 
 def print_target_select():
     print("対戦相手を選ぼう")
+    
+
+def aa():
     print("福田首相 : 1")
     print("野田総理 : 2")
     print("森元首相 : 3")
-    inp_ene = int(input())
-    if inp_ene == 1:
-        t = c.hukuda()
-    elif inp_ene == 2:
-        t = c.mori()
-    elif inp_ene == 3:
-        t = c.Noda()
-    return t
+    inp = int(input())
+    if inp == 1:
+        y = c.hukuda()
+    elif inp == 2:
+        y = c.Noda()
+    elif inp == 3:
+        y = c.mori()
+    return y
+
 
 
 def print_command_select(y, t):
