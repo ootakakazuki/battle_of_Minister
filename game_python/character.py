@@ -191,7 +191,7 @@ class mori(Original):
                          ziseinoku="「日本は神の...国...」")
 
 
-    def heal(self):  # 虐待おじさんは攻撃特化にしたいので魔法能力を弱めに再設定(オーバーライド)する。
+    def heal(self):  # 森総理は攻撃特化にしたいので魔法能力を弱めに再設定(オーバーライド)する。
         print(self.name + "は回復呪文をと唱えた！")
         if self.MP >= 5:
             self.MP -= 5
