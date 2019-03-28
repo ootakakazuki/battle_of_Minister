@@ -32,7 +32,7 @@ def main():
         if you.HP <= 0:
             v.print_lose(you)
             break
-        v.ozisan_kakusei(you, tar)  # 森元首相覚醒する表示
+        v.mori_kakusei(you, tar)  # 森元首相覚醒する表示
         ref_count += 1
         print(str(ref_count) + "ターン目")
         if you.reflect_flg == 1 and ref_count - you.ref_count ==6:  # リフレクト処理

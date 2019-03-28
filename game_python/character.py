@@ -243,7 +243,7 @@ class Noda(Original):
         s = randint(10)
         if s <= 6 and target.suimin_flg == 0:
             target.suimin_flg = 1
-            print("「アイスティーしかなかったけどいいかな？」")
+            print("「震えて眠れ」")
             print(target.name + "は眠ってしまった！")
         else:
             print("しかし失敗した！")
