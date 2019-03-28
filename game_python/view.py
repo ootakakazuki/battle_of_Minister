@@ -3,22 +3,9 @@ import character as c
 def print_select():
     print("誰を選びますか")
 
-#    print("福田首相 : 1")
-#    print("野田総理 : 2")
-#    print("森元首相 : 3")
-#    inp = int(input())
-#    if inp == 1:
-#        y = c.hukuda()
-#    elif inp == 2:
-#        y = c.Noda()
-#    elif inp == 3:
-#        y = c.mori()
-#    return y
-
-
 def print_target_select():
     print("対戦相手を選ぼう")
-    
+
 
 def aa():
     print("福田首相 : 1")
@@ -52,20 +39,19 @@ def print_command_select(y, t):
     return inp
 
 
-def mori_kakusei(you, tar):
+def mori_kakusei(chara):
     """森首相限定の特殊能力。体力が250以下になったときに攻撃力が1.5倍になる
     """
-    if you.name == "森元首相" and you.HP <= 250 and you.kakusei_flg == 0:
-        you.AT *= 1.5
-        you.kakusei_flg = 1
-        print("馬鹿野郎！！！！")
-        print("森元首相は覚醒した！")
+    if chara.name == "森元首相" and chara.HP <= 250 and chara.kakusei_flg == 0:
+        attack_1_5_multi(chara)
 
-    if tar.name == "森元首相" and tar.HP <= 250 and tar.kakusei_flg == 0:
-        tar.AT *= 1.5
-        tar.kakusei_flg = 1
-        print("馬鹿野郎！！！！")
-        print("森元首相は覚醒した！")
+
+def attack_1_5_multi(chara):
+    # 攻撃力を1.5倍にする
+    chara.AT *= 1.5
+    chara.kakusei_flg = 1
+    print("馬鹿野郎！！！！")
+    print("森元首相は覚醒した！")
 
 
 def print_win(tar):
